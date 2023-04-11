@@ -11,7 +11,9 @@ public class PlayerMove : MonoBehaviour
 
     [SerializeField] float speed = 3f;
 
-    // Start is called before the first frame update
+    private void Start() {
+        EnablePlayerMovment();
+    }
     private void Awake()
     {
         rgbd2d = GetComponent<Rigidbody2D>();
@@ -27,5 +29,18 @@ public class PlayerMove : MonoBehaviour
         movementVector *= speed;
 
         rgbd2d.velocity = movementVector;
+    }
+
+    private void OnEnable() {
+        PlayerHealth.OnPlayerDeath += DisablePlayerMovment;
+    }
+    private void OnDisable() {
+        PlayerHealth.OnPlayerDeath -= DisablePlayerMovment;
+    }
+    private void DisablePlayerMovment(){
+        rgbd2d.bodyType= RigidbodyType2D.Static;
+    }
+     private void EnablePlayerMovment(){
+        rgbd2d.bodyType= RigidbodyType2D.Dynamic;
     }
 }
