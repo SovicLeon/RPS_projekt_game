@@ -31,11 +31,11 @@ using UnityEngine;
            }
        }
      }
-     void Move(float delta)
+     void Move(float deltaX,float deltaY)
      {
          foreach (ParallaxLayer layer in parallaxLayers)
        {
-           layer.Move(delta);
+           layer.Move(deltaX,deltaY);
        }
    }
  }
