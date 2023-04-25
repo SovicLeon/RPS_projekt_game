@@ -7,7 +7,15 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     Rigidbody2D rgbd2d;
-    Vector3 movementVector;
+    [HideInInspector]
+    public Vector3 movementVector;
+    [HideInInspector]
+    public float lastHorizontalVector;
+    [HideInInspector]
+    public float lastVerticalVector;
+    [HideInInspector]
+    public bool move = false;
+
 
     [SerializeField] float speed = 3f;
 
@@ -21,10 +29,30 @@ public class PlayerMove : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         movementVector.x = Input.GetAxisRaw("Horizontal");
         movementVector.y = Input.GetAxisRaw("Vertical");
+
+        if (movementVector.x != 0 && movementVector.y != 0) {
+            lastHorizontalVector = movementVector.x;
+            lastVerticalVector = movementVector.y;
+            if (move == false) {
+                move = true;
+            }
+        } else if (movementVector.x != 0) {
+            lastHorizontalVector = movementVector.x;
+            lastVerticalVector = 0.0f;
+            if (move == false) {
+                move = true;
+            }
+        } else if (movementVector.y != 0) {
+            lastVerticalVector = movementVector.y;
+            lastHorizontalVector = 0.0f;
+            if (move == false) {
+                move = true;
+            }
+        }
 
         movementVector *= speed;
 
