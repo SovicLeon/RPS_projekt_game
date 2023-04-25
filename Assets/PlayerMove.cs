@@ -8,6 +8,7 @@ public class PlayerMove : MonoBehaviour
 {
     Rigidbody2D rgbd2d;
     Vector3 movementVector;
+    public Animator animator;
 
     [SerializeField] float speed = 3f;
 
@@ -15,6 +16,7 @@ public class PlayerMove : MonoBehaviour
     private void Awake()
     {
         rgbd2d = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         movementVector = new Vector3();
     }
 
@@ -27,5 +29,15 @@ public class PlayerMove : MonoBehaviour
         movementVector *= speed;
 
         rgbd2d.velocity = movementVector;
+
+        if (movementVector.magnitude > 0)
+        {
+            animator.SetBool("isBoosting", true);
+        }
+        else
+        {
+            animator.SetBool("isBoosting", false);
+        }
+
     }
 }

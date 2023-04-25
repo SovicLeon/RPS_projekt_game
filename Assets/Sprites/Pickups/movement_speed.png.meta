@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 15461f834b57ba040883de29cfa7466e
+guid: 6d18530896e9cce4fb4941b0f00dcc66
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,106 +117,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: enemy_ufo_beam_attack_0
+      name: movement_speed_0
       rect:
         serializedVersion: 2
-        x: 2
+        x: 0
         y: 0
-        width: 28
-        height: 26
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5716c2cd18ac524491a19ad6a0ceb7c
-      internalID: 335466409
+      spriteID: c7b21d8a8ea71c8459afddaf8bdfa150
+      internalID: 204956149
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_ufo_beam_attack_1
+      name: movement_speed_1
       rect:
         serializedVersion: 2
-        x: 34
+        x: 32
         y: 0
-        width: 28
-        height: 26
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: daa5a9a4567f1874da68e843a7acb1b4
-      internalID: 915716519
+      spriteID: 17231ad61ba51bc45a79d542d6398124
+      internalID: 773175944
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_ufo_beam_attack_2
+      name: movement_speed_2
       rect:
         serializedVersion: 2
-        x: 66
+        x: 64
         y: 0
-        width: 28
-        height: 26
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 890362d25fdd64a43b2929faae38672e
-      internalID: 1620918008
+      spriteID: 27e1792d0056c264c87a49ec18828e20
+      internalID: -853605641
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_ufo_beam_attack_3
+      name: movement_speed_3
       rect:
         serializedVersion: 2
-        x: 98
+        x: 96
         y: 0
-        width: 28
-        height: 26
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae96823ea00b685479e91a00e4e97773
-      internalID: 1681926429
+      spriteID: 9fddedddceb6ad34282f2a127ddeb742
+      internalID: -659821668
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_ufo_beam_attack_4
+      name: movement_speed_4
       rect:
         serializedVersion: 2
-        x: 130
+        x: 128
         y: 0
-        width: 28
-        height: 26
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66972fa36e066684fa512e7d6548977f
-      internalID: -1008034547
+      spriteID: dd406ebf5d3c7ee4e9eb60594e5602e4
+      internalID: 590495134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: movement_speed_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f57cd6ffda336a4587a1a92515a75d4
+      internalID: -1181571289
       vertices: []
       indices: 
       edges: []
@@ -232,11 +253,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      enemy_ufo_beam_attack_0: 335466409
-      enemy_ufo_beam_attack_1: 915716519
-      enemy_ufo_beam_attack_2: 1620918008
-      enemy_ufo_beam_attack_3: 1681926429
-      enemy_ufo_beam_attack_4: -1008034547
+      movement_speed_0: 204956149
+      movement_speed_1: 773175944
+      movement_speed_2: -853605641
+      movement_speed_3: -659821668
+      movement_speed_4: 590495134
+      movement_speed_5: -1181571289
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

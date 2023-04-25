@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 15461f834b57ba040883de29cfa7466e
+guid: ce19d78ceef7fe2498d7c794efb8d44e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,106 +117,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: enemy_ufo_beam_attack_0
+      name: plasma_shield_0
       rect:
         serializedVersion: 2
-        x: 2
+        x: 0
         y: 0
-        width: 28
-        height: 26
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5716c2cd18ac524491a19ad6a0ceb7c
-      internalID: 335466409
+      spriteID: d27c0921cd097aa4981f8b0fcfd34420
+      internalID: 105607108
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_ufo_beam_attack_1
+      name: plasma_shield_1
       rect:
         serializedVersion: 2
-        x: 34
+        x: 32
         y: 0
-        width: 28
-        height: 26
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: daa5a9a4567f1874da68e843a7acb1b4
-      internalID: 915716519
+      spriteID: 3476610cbce4ab8499fef1d75ff949d0
+      internalID: -1935049452
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_ufo_beam_attack_2
+      name: plasma_shield_2
       rect:
         serializedVersion: 2
-        x: 66
+        x: 64
         y: 0
-        width: 28
-        height: 26
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 890362d25fdd64a43b2929faae38672e
-      internalID: 1620918008
+      spriteID: efc406e041200ac43bddacb3168bb6f5
+      internalID: 1405721924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_ufo_beam_attack_3
+      name: plasma_shield_3
       rect:
         serializedVersion: 2
-        x: 98
+        x: 96
         y: 0
-        width: 28
-        height: 26
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae96823ea00b685479e91a00e4e97773
-      internalID: 1681926429
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemy_ufo_beam_attack_4
-      rect:
-        serializedVersion: 2
-        x: 130
-        y: 0
-        width: 28
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 66972fa36e066684fa512e7d6548977f
-      internalID: -1008034547
+      spriteID: 3e717c616398fdd4f89887eec4cf8278
+      internalID: -1059794810
       vertices: []
       indices: 
       edges: []
@@ -232,11 +211,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      enemy_ufo_beam_attack_0: 335466409
-      enemy_ufo_beam_attack_1: 915716519
-      enemy_ufo_beam_attack_2: 1620918008
-      enemy_ufo_beam_attack_3: 1681926429
-      enemy_ufo_beam_attack_4: -1008034547
+      plasma_shield_0: 105607108
+      plasma_shield_1: -1935049452
+      plasma_shield_2: 1405721924
+      plasma_shield_3: -1059794810
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
