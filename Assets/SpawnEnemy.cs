@@ -6,13 +6,14 @@ public class SpawnEnemy : MonoBehaviour
 {
     public GameObject prefab;
     public float respawnTime = 1.0f;
-    public float spawnYCoord = 1.3f;
+    public float spawnDistance = 5.0f;
 
     private void spawnEnemy() {
-        GameObject newEnemy = Instantiate(prefab) as GameObject;
-        newEnemy.transform.position = new Vector2(0.969038f, spawnYCoord);
-        spawnYCoord += 0.2f;
+        Vector2 playerPos = GameObject.FindGameObjectWithTag("Player").transform.position;
+        Vector2 spawnPos = new Vector2(Random.Range(-2f, 2f), Random.Range(-2f, 2f)) + playerPos;
+        GameObject newEnemy = Instantiate(prefab, spawnPos, Quaternion.identity);
     }
+
 
     IEnumerator spawnCoroutine() {
         while(true){
