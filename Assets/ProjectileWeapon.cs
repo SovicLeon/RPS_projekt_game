@@ -42,4 +42,17 @@ public class ProjectileWeapon : MonoBehaviour
             projectileShot.transform.rotation = Quaternion.LookRotation(Vector3.forward, lookDirection);
         }
     }
+
+    public void ChangeSpeed(float newSpeed)
+    {
+        StartCoroutine(ChangeSpeedForDuration(newSpeed, 20f));
+    }
+
+    private IEnumerator ChangeSpeedForDuration(float newSpeed, float duration)
+    {
+        float originalSpeed = timeToAttack;
+        timeToAttack = newSpeed;
+        yield return new WaitForSeconds(duration);
+        timeToAttack = originalSpeed;
+    }
 }

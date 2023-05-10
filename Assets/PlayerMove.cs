@@ -71,4 +71,17 @@ public class PlayerMove : MonoBehaviour
      private void EnablePlayerMovment(){
         rgbd2d.bodyType= RigidbodyType2D.Dynamic;
     }
+
+    public void ChangeSpeed(float newSpeed)
+    {
+        StartCoroutine(ChangeSpeedForDuration(newSpeed, 20f));
+    }
+
+    private IEnumerator ChangeSpeedForDuration(float newSpeed, float duration)
+    {
+        float originalSpeed = speed;
+        speed = newSpeed;
+        yield return new WaitForSeconds(duration);
+        speed = originalSpeed;
+    }
 }

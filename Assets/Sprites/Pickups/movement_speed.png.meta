@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4c4a4d414f7b66d41b7bf243e2bb33b1
+guid: bf1bfad2594f0d94b8e01773a86c9a2f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,12 +117,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player_spaceship_moving_shooting_0
+      name: movement_speed_0
       rect:
         serializedVersion: 2
-        x: 2
+        x: 0
         y: 0
-        width: 28
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -131,19 +131,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 986615562fb448b4b8dd7573c4c6ed14
-      internalID: 320048604
+      spriteID: adba26dbcd039754088d479ec8190b05
+      internalID: -1864105742
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_spaceship_moving_shooting_1
+      name: movement_speed_1
       rect:
         serializedVersion: 2
-        x: 34
+        x: 32
         y: 0
-        width: 28
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -152,19 +152,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2122bd18735ff24eb68ac53d158b618
-      internalID: -219570337
+      spriteID: 95cb0d7b79cd0914eaa6c4c8b0a31013
+      internalID: -405463041
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_spaceship_moving_shooting_2
+      name: movement_speed_2
       rect:
         serializedVersion: 2
-        x: 66
+        x: 64
         y: 0
-        width: 28
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -173,19 +173,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0da37b70446e94446856b3df2de850e2
-      internalID: 1259413384
+      spriteID: 1bdaf1802431e4046a5ad03510a563bd
+      internalID: 1110410896
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_spaceship_moving_shooting_3
+      name: movement_speed_3
       rect:
         serializedVersion: 2
-        x: 98
+        x: 96
         y: 0
-        width: 28
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -194,19 +194,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9666f377980212e409d34528d498a504
-      internalID: 1377897793
+      spriteID: 3dff70ac847ea9643ba3e2a6b36d1dfc
+      internalID: -937547653
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_spaceship_moving_shooting_4
+      name: movement_speed_4
       rect:
         serializedVersion: 2
-        x: 130
+        x: 128
         y: 0
-        width: 28
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -215,19 +215,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a9eda252cea6a746a335fbae451fcd1
-      internalID: 548316770
+      spriteID: baf98f5ba24e20e488d0842f0ffed750
+      internalID: -1766411067
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_spaceship_moving_shooting_5
+      name: movement_speed_5
       rect:
         serializedVersion: 2
-        x: 162
+        x: 160
         y: 0
-        width: 28
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -236,8 +236,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 173287ef50714244597a3ffcb4660f43
-      internalID: -1043436254
+      spriteID: 5fc2a6f20a97093409a4be0311bf9699
+      internalID: 1356988984
       vertices: []
       indices: 
       edges: []
@@ -253,12 +253,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      player_spaceship_moving_shooting_0: 320048604
-      player_spaceship_moving_shooting_1: -219570337
-      player_spaceship_moving_shooting_2: 1259413384
-      player_spaceship_moving_shooting_3: 1377897793
-      player_spaceship_moving_shooting_4: 548316770
-      player_spaceship_moving_shooting_5: -1043436254
+      movement_speed_0: -1864105742
+      movement_speed_1: -405463041
+      movement_speed_2: 1110410896
+      movement_speed_3: -937547653
+      movement_speed_4: -1766411067
+      movement_speed_5: 1356988984
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

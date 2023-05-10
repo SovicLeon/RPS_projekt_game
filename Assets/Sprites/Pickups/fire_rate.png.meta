@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4c4a4d414f7b66d41b7bf243e2bb33b1
+guid: 0b9898bafd2e00f4ab9e491b70e1391b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,127 +117,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player_spaceship_moving_shooting_0
+      name: fire_rate_0
       rect:
         serializedVersion: 2
-        x: 2
+        x: 0
         y: 0
-        width: 28
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 986615562fb448b4b8dd7573c4c6ed14
-      internalID: 320048604
+      spriteID: 6402dc103eed73a45a4a8ba245dd7e83
+      internalID: 1268107496
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_spaceship_moving_shooting_1
+      name: fire_rate_1
       rect:
         serializedVersion: 2
-        x: 34
+        x: 32
         y: 0
-        width: 28
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2122bd18735ff24eb68ac53d158b618
-      internalID: -219570337
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_spaceship_moving_shooting_2
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 0
-        width: 28
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0da37b70446e94446856b3df2de850e2
-      internalID: 1259413384
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_spaceship_moving_shooting_3
-      rect:
-        serializedVersion: 2
-        x: 98
-        y: 0
-        width: 28
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9666f377980212e409d34528d498a504
-      internalID: 1377897793
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_spaceship_moving_shooting_4
-      rect:
-        serializedVersion: 2
-        x: 130
-        y: 0
-        width: 28
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0a9eda252cea6a746a335fbae451fcd1
-      internalID: 548316770
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_spaceship_moving_shooting_5
-      rect:
-        serializedVersion: 2
-        x: 162
-        y: 0
-        width: 28
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 173287ef50714244597a3ffcb4660f43
-      internalID: -1043436254
+      spriteID: 0961e773da63ef743b7973a10c3ebec3
+      internalID: 482330914
       vertices: []
       indices: 
       edges: []
@@ -253,12 +169,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      player_spaceship_moving_shooting_0: 320048604
-      player_spaceship_moving_shooting_1: -219570337
-      player_spaceship_moving_shooting_2: 1259413384
-      player_spaceship_moving_shooting_3: 1377897793
-      player_spaceship_moving_shooting_4: 548316770
-      player_spaceship_moving_shooting_5: -1043436254
+      fire_rate_0: 1268107496
+      fire_rate_1: 482330914
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
