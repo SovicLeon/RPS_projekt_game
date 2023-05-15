@@ -17,10 +17,13 @@ public class UIManager : MonoBehaviour
    public void RestartLevel(){
       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
    }
-   public void GoToMainMenu(){
-
+   public void StartGame(){
+      SceneManager.LoadScene("SampleScene");
    }
-     public void GoToShop(){
-      
+   public void GoToMainMenu(){
+       SceneManager.LoadScene("MainMenu");
+   }
+     public void Exit(){
+      Application.Quit();
    }
 }
