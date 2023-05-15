@@ -6,13 +6,27 @@ using TMPro;
 public class PlayerLevelBar : MonoBehaviour
 {
     public Slider slider;
-    public GameObject lvl_obj;
-    TextMeshProUGUI level_text;
+    public Text lvl_obj;
+    private int Level;
+    
     public void setLevel(float level){
         slider.value = level;
     }
-private void Start() {
-    level_text=lvl_obj.GetComponent<TextMeshProUGUI>();
-}
+    private void OnEnable() {
+        PlayerLevel.OnPlayerLevelUp += LevelUpText;
+    }
+    private void OnDisable() {
+         PlayerLevel.OnPlayerLevelUp -= LevelUpText;
+    }
+    public void LevelUpText(){
+        Level++;
+        lvl_obj.text=Level.ToString();
+
+    }
+    private void Start() {
+        Level=1;
+        lvl_obj.text=Level.ToString();
+    }
+
 
 }
