@@ -8,6 +8,8 @@ TagManager:
   - Meteors
   - MovementSpeed
   - FireRate
+  - EnemyShot
+  - PlayerShot
   layers:
   - Default
   - TransparentFX
