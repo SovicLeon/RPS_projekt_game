@@ -15,9 +15,11 @@ public class PlayerMove : MonoBehaviour
     public float lastVerticalVector;
     [HideInInspector]
     public bool move = false;
-
-
     [SerializeField] float speed = 3f;
+
+    public bool hasMovementSpeedPickup = false;
+    private Quaternion targetRotation;
+    public float rotationSpeed = 400f;
 
     private void Start() {
         EnablePlayerMovment();
@@ -26,6 +28,7 @@ public class PlayerMove : MonoBehaviour
     {
         rgbd2d = GetComponent<Rigidbody2D>();
         movementVector = new Vector3();
+        transform.rotation = Quaternion.Euler(0f, 0f, 0f);
     }
 
     // Update is called once per frame
@@ -54,6 +57,15 @@ public class PlayerMove : MonoBehaviour
             }
         }
 
+        if (move)
+        {
+            float angle = Mathf.Atan2(lastVerticalVector, lastHorizontalVector) * Mathf.Rad2Deg;
+            targetRotation = Quaternion.AngleAxis(angle - 90f, Vector3.forward);
+
+            // Smoothly rotate towards the target rotation
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.fixedDeltaTime);
+        }
+
         movementVector *= speed;
 
         rgbd2d.velocity = movementVector;
@@ -74,14 +86,16 @@ public class PlayerMove : MonoBehaviour
 
     public void ChangeSpeed(float newSpeed)
     {
-        StartCoroutine(ChangeSpeedForDuration(newSpeed, 20f));
+        StartCoroutine(ChangeSpeedForDuration(newSpeed, 10f));
     }
 
     private IEnumerator ChangeSpeedForDuration(float newSpeed, float duration)
     {
         float originalSpeed = speed;
         speed = newSpeed;
+        hasMovementSpeedPickup = true;
         yield return new WaitForSeconds(duration);
         speed = originalSpeed;
+        hasMovementSpeedPickup = false;
     }
 }

@@ -45,7 +45,7 @@ public class ProjectileWeapon : MonoBehaviour
 
     public void ChangeSpeed(float newSpeed)
     {
-        StartCoroutine(ChangeSpeedForDuration(newSpeed, 20f));
+        StartCoroutine(ChangeSpeedForDuration(newSpeed, 10f));
     }
 
     private IEnumerator ChangeSpeedForDuration(float newSpeed, float duration)

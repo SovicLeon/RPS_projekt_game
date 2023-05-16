@@ -24,5 +24,24 @@ public class PlayerHealth : MonoBehaviour
             
         }
     }
-    
+
+    public void FixedUpdate()
+    {
+        Debug.Log(health);
+    }
+
+    public void GiveHealth(float newHealth)
+    {
+        if((health + newHealth) >= 100)
+        {
+            health = maxHealth;
+        }
+        else
+        {
+            health += newHealth;   
+        }
+        healthBar.setHealth(health);
+
+    }
+
 }
