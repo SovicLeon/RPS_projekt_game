@@ -19,16 +19,12 @@ public class PlayerHealth : MonoBehaviour
         healthBar.setHealth(health);
         if(health<=0){
             health=0;
-            Debug.Log("You re dead");
             OnPlayerDeath?.Invoke();
             
         }
     }
 
-    public void FixedUpdate()
-    {
-        Debug.Log(health);
-    }
+ 
 
     public void GiveHealth(float newHealth)
     {

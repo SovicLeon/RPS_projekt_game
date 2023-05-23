@@ -55,4 +55,8 @@ public class ProjectileWeapon : MonoBehaviour
         yield return new WaitForSeconds(duration);
         timeToAttack = originalSpeed;
     }
+     public void UpgradeSpeed(float newSpeed)
+    {
+        timeToAttack = newSpeed;
+    }
 }

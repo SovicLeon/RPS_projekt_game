@@ -5,9 +5,12 @@ using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
    public GameObject gameOverMenu;
+
    public void EnableGameOverMenu(){
     gameOverMenu.SetActive(true);
    }
+
+   
    private void OnEnable() {
     PlayerHealth.OnPlayerDeath += EnableGameOverMenu;
    }

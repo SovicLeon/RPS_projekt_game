@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class EnemyHealth : MonoBehaviour
 {
     
-     public static event Action OnEnemyDeath;
+    public static event Action OnEnemyDeath;
     public float maxHealth =20;
     private float health;
 
