@@ -10,7 +10,7 @@ public class SpawnEnemy : MonoBehaviour
 
     private void spawnEnemy() {
         Vector2 playerPos = GameObject.FindGameObjectWithTag("Player").transform.position;
-        Vector2 spawnPos = new Vector2(Random.Range(-2f, 2f), Random.Range(-2f, 2f)) + playerPos;
+        Vector2 spawnPos = new Vector2(Random.Range(-10f, 10f), Random.Range(-10f, 10f)) + playerPos;
         GameObject newEnemy = Instantiate(prefab, spawnPos, Quaternion.identity);
     }
 

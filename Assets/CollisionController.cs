@@ -45,7 +45,7 @@ public class CollisionController : MonoBehaviour
             }
             else if (obj.gameObject.CompareTag("Meteors"))
             {
-                ObjectOfInt.GetComponent<PlayerHealth>().TakeDamage(100);
+                ObjectOfInt.GetComponent<PlayerHealth>().TakeDamage(75);
             }
             else if (obj.gameObject.CompareTag("Health"))
             {

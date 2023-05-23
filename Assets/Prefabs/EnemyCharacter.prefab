@@ -84,7 +84,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectOfInt: {fileID: 1325602077561284164}
   projectile: {fileID: 4868774533243670366}
-  hitEffectPrefab: {fileID: 7853429350283179776, guid: 9040c0f7337b2de49b7fe9172f2c7a7a, type: 3}
 --- !u!114 &7036541529365523908
 MonoBehaviour:
   m_ObjectHideFlags: 0
