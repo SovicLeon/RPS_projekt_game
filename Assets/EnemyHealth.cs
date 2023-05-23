@@ -10,13 +10,13 @@ public class EnemyHealth : MonoBehaviour
     public float maxHealth =20;
     private float health;
     private SpriteRenderer spriteRenderer;
-    
+
     void Start()
     {
         health = maxHealth;
         spriteRenderer = transform.Find("enemy_ufo_beam_0").GetComponent<SpriteRenderer>();
     }
-   
+
     public void TakeDamage(float damage)
     {
         health -= damage;

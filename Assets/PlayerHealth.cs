@@ -37,7 +37,7 @@ public class PlayerHealth : MonoBehaviour
     {
         health -= damage;
         healthBar.setHealth(health);
-        
+
         if (spriteRenderer != null)
         {
             StartCoroutine(DamageFlash(0.1f));
@@ -46,15 +46,11 @@ public class PlayerHealth : MonoBehaviour
         if(health <= 0)
         {
             health=0;
-            Debug.Log("You're dead");
             OnPlayerDeath?.Invoke();
         }
     }
 
-    public void FixedUpdate()
-    {
-        Debug.Log(health);
-    }
+
 
     public void GiveHealth(float newHealth)
     {
@@ -64,7 +60,7 @@ public class PlayerHealth : MonoBehaviour
         }
         else
         {
-            health += newHealth;   
+            health += newHealth;
         }
         healthBar.setHealth(health);
     }

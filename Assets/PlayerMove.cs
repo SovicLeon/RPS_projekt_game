@@ -98,4 +98,9 @@ public class PlayerMove : MonoBehaviour
         speed = originalSpeed;
         hasMovementSpeedPickup = false;
     }
+
+    public void UpgradeSpeed(float add)
+    {
+       speed += add;
+    }
 }
