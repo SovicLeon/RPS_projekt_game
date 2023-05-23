@@ -4,24 +4,25 @@ using UnityEngine;
 
 public class premikanje : MonoBehaviour
 {
-    private float nextActionTime = 1.0f;
     public float speed = 2.0f;
     private Rigidbody2D rb;
+    private Transform player;
 
     // Start is called before the first frame update
     void Start()
     {
-        rb = this.GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
         rb.velocity = new Vector2(speed, 0);
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Time.time > nextActionTime ) {
-            nextActionTime += 2;
-            speed = -speed;
-            rb.velocity = new Vector2(speed, 0);
+        if (player != null)
+        {
+            Vector2 direction = player.position - transform.position;
+            rb.velocity = direction.normalized * speed;
         }
     }
 }
