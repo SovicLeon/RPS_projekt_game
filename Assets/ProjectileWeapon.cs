@@ -57,6 +57,6 @@ public class ProjectileWeapon : MonoBehaviour
     }
      public void UpgradeSpeed(float newSpeed)
     {
-        timeToAttack = newSpeed;
+        timeToAttack += newSpeed;
     }
 }

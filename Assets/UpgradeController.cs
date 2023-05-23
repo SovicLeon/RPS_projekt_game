@@ -22,11 +22,7 @@ public class UpgradeController : MonoBehaviour
      }
       
     }
-     public void upgradeSpeedOfGun(){
-     if(Player.gameObject.CompareTag("Player")){
-      Player.GetComponent<ProjectileWeapon>().UpgradeSpeed((float)5);
-     }
-    }
+    
      public void Nuke(){
       GameObject[] gameObjects = GameObject.FindGameObjectsWithTag("Enemy");
       foreach(GameObject target in gameObjects)
