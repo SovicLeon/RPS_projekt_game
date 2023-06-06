@@ -17,7 +17,7 @@ public class UIManager : MonoBehaviour
          Upgrades.SetActive(false);
         
       if(Player.gameObject.CompareTag("Player")){
-      Player.GetComponent<PlayerMove>().UpgradeSpeed((float)5);
+      Player.GetComponent<PlayerMove>().UpgradeSpeed((float)3);
      }
       
     }
