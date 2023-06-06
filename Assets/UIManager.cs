@@ -9,8 +9,8 @@ public class UIManager : MonoBehaviour
     public GameObject Upgrades;
    public void EnableGameOverMenu(){
     gameOverMenu.SetActive(true);
-      // Remove the subscription to LevelSystem.OnLevelUp
-    LevelSystem.OnLevelUp -= EnableUpgradeMenu;  
+      
+      Upgrades.SetActive(false);
      }
 
        public void upgradeSpeedOfPlayer(){
@@ -45,7 +45,7 @@ private void OnDisable()
 private void EnableUpgradeMenu()
 {
     Upgrades.SetActive(true);
-    PlayerHealth.OnPlayerDeath -= EnableGameOverMenu;
+    gameOverMenu.SetActive(false);
 }
 
    public void RestartLevel(){

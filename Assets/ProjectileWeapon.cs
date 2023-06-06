@@ -47,7 +47,14 @@ public class ProjectileWeapon : MonoBehaviour
     {
         StartCoroutine(ChangeSpeedForDuration(newSpeed, 10f));
     }
-
+private void OnEnable() {
+        PlayerHealth.OnPlayerDeath += DisablePlayerShoot;
+    }
+   
+    private void DisablePlayerShoot(){
+       timeToAttack=9999999;
+    }
+    
     private IEnumerator ChangeSpeedForDuration(float newSpeed, float duration)
     {
         float originalSpeed = timeToAttack;
