@@ -5,18 +5,49 @@ using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
    public GameObject gameOverMenu;
-
+   public GameObject Player;
+    public GameObject Upgrades;
    public void EnableGameOverMenu(){
     gameOverMenu.SetActive(true);
-   }
+      // Remove the subscription to LevelSystem.OnLevelUp
+    LevelSystem.OnLevelUp -= EnableUpgradeMenu;  
+     }
 
-   
-   private void OnEnable() {
+       public void upgradeSpeedOfPlayer(){
+         Upgrades.SetActive(false);
+        
+      if(Player.gameObject.CompareTag("Player")){
+      Player.GetComponent<PlayerMove>().UpgradeSpeed((float)5);
+     }
+      
+    }
+    
+     public void Nuke(){
+      Upgrades.SetActive(false);
+      GameObject[] gameObjects = GameObject.FindGameObjectsWithTag("Enemy");
+      foreach(GameObject target in gameObjects)
+        GameObject.Destroy(target);
+    }
+ private void OnEnable()
+{
     PlayerHealth.OnPlayerDeath += EnableGameOverMenu;
-   }
-   private void OnDisable() {
+    LevelSystem.OnLevelUp += EnableUpgradeMenu;
+}
+
+private void OnDisable()
+{
     PlayerHealth.OnPlayerDeath -= EnableGameOverMenu;
-   }
+    LevelSystem.OnLevelUp -= EnableUpgradeMenu;
+}
+
+ 
+
+private void EnableUpgradeMenu()
+{
+    Upgrades.SetActive(true);
+    PlayerHealth.OnPlayerDeath -= EnableGameOverMenu;
+}
+
    public void RestartLevel(){
       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
    }
