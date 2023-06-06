@@ -11,6 +11,8 @@ TagManager:
   - EnemyShot
   - PlayerShot
   - Health
+  - Boss
+  - EnemySpawner
   layers:
   - Default
   - TransparentFX

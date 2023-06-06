@@ -58,5 +58,10 @@ public class CollisionController : MonoBehaviour
             Destroy(obj.gameObject);
             ObjectOfInt.GetComponent<EnemyHealth>().TakeDamage(10);
         }
+        if (ObjectOfInt.gameObject.CompareTag("Boss") && obj.gameObject.CompareTag("PlayerShot"))
+        {
+            Destroy(obj.gameObject);
+            ObjectOfInt.GetComponent<EnemyHealthBoss>().TakeDamage(10);
+        }
     }
 }
